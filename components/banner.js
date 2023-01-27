@@ -7,7 +7,7 @@ const subtitleStyle = {
   color: "black"
 }
 
-const Banner = () => (
+const Banner = ({children}) => (
   <header>
     <div className="grid sm:grid-cols-[auto_1fr] items-center mb-4 pt-4">
       <Image
@@ -15,7 +15,7 @@ const Banner = () => (
         alt="Global Logo"
         className={styles.logo}
       />
-      <h1 className="sm:text-center" style={subtitleStyle}>Some text goes here</h1>
+      <h1 className="sm:text-center" style={subtitleStyle}>{children}</h1>
     </div>
   </header>
 );

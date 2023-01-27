@@ -1,7 +1,14 @@
-import Banner from "./banner"
+import Banner from "./banner";
+import HouseList from "./houseList";
 
-const App = () => (
-    <Banner />
-)
-  
-  export default App;
+const App = () => {
+  const jsx = <div>Tittle goes here</div>;
+  return (
+    <>
+      <Banner>{jsx}</Banner>
+      <HouseList />
+    </>
+  );
+};
+
+export default App;
